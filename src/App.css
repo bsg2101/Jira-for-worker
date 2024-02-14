@@ -1,0 +1,177 @@
+/* Genel stiller */
+
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.task-create {
+    max-width: 600px;
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.task-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.lbl {
+    margin: 10px 0;
+    color: #333;
+}
+
+.task-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.task-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.task-show {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task-title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.task-main {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.btn-danger {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    padding: 8px 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-right: 5px;
+}
+
+.btn-danger:hover {
+    background-color: #da190b;
+}
+
+.btn-edit {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    padding: 8px 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-edit:hover {
+    background-color: #0b7dda;
+}
+
+.all-btn {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.btn-update {
+    background-color: #9c27b0;
+    transition: background-color 0.3s ease;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-update:hover {
+    background-color: #7b1fa2;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* Kart stilleri */
+
+.task-show {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.task-show:hover {
+    transform: translateY(-5px);
+}
+
+/* Mobil uyumlu stiller */
+
+@media only screen and (max-width: 600px) {
+    .task-create {
+        padding: 10px;
+    }
+
+    .task-show {
+        width: calc(100% - 40px); /* Ekranın sol ve sağındaki padding değerleri kadar azaltır */
+    }
+}

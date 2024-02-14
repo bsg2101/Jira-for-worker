@@ -1,0 +1,19 @@
+{
+  "tasks": [
+    {
+      "id": "95b1",
+      "title": "Buton Güncellemesi",
+      "description": "jira for work uygulamasında tüm butonların bootstrap kütüphanesine uygun şekilde yazılması"
+    },
+    {
+      "title": "Yazı fontu",
+      "description": "jira for work uygulamasında tüm Fontların bootstrap kütüphanesine uygun şekilde yazılması",
+      "id": "679c"
+    },
+    {
+      "id": "a4e3",
+      "title": "Buton Güncellemesi",
+      "description": "jira for work uygulamasında tüm butonların bootstrap kütüphanesine uygun şekilde yazılması"
+    }
+  ]
+}
